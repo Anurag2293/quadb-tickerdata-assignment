@@ -1,0 +1,131 @@
+body {
+    background-color: #191D28;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo-head {
+    color: #3BC2BD;
+    font-weight: 400;
+    font-size: 3rem;
+    margin: 0;
+}
+
+#logo-tail {
+    color: white;
+    font-size: 1.5rem;
+}
+
+#logo-desc {
+    color: #68696B;
+    font-stretch: ultra-condensed;
+}
+
+#logo-desc > p > span {
+    color: #35A09E
+}
+
+.dropdown > select {
+    background-color: #2E3241;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    padding: 0.5rem;
+    font-size: large;
+    word-spacing: 10px;
+}
+
+.dropdown > select > option {
+    font-size: large;
+    width: 100px;
+}
+
+.connect-box {
+    display: flex;
+    align-items: center;
+}
+
+#timer {
+    color: #3DC6C1;
+    margin-right: 10px;
+    font-size: large;
+    font-weight: 700;
+    border-radius: 2rem;
+    border: 4px solid #3DC6C1;
+    padding: 10px;
+}
+
+button {
+    background-color: #3DC6C1;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    font-size: larger;
+    font-weight: 700;
+    font-stretch: condensed;
+}
+
+section {
+    margin-top: 3rem;
+}
+
+#loading-screen {
+    color: white;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    text-align: center;
+    color: #808288;
+    font-size: x-large;
+}
+
+tr.data {
+    background-color: #2E3241;
+    border: 1px solid #2E3241;
+    border-radius: 30px;
+}
+
+td {
+    text-align: center;
+    font-size: x-large;
+    font-weight: 500;
+    color: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+@media (max-width: 500px) {
+    body {
+        padding: 0;
+        margin: 0;
+    }
+    nav {
+        width: 100vw;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    nav div {
+        margin-top: 10px;
+    }
+    th, td {
+        font-size: small;
+    }
+}

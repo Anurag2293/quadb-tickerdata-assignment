@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HodIInfo</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/index.js" defer></script>
+</head>
+
+<body>
+    <nav>
+        <div class="title">
+            <div>
+                <span id="logo-head">HODLINFO</span>
+                <span id="logo-tail">.com</span>
+            </div>
+            <div id="logo-desc"> 
+                <p>Powered by <span>Finstreet</span></p>
+            </div>
+        </div>
+        <div class="dropdown">
+            <select name="currency" id="currency">
+                <option value="inr" class="options">INR</option>
+            </select>
+            <select name="currency" id="currency">
+                <option value="btc" class="options">BTC</option>
+                <option value="xrp" class="options">XRP</option>
+                <option value="eth" class="options">ETH</option>
+                <option value="trx" class="options">TRX</option>
+                <option value="eos" class="options">EOS</option>
+                <option value="zil" class="options">ZIL</option>
+            </select>
+        </div>
+        <div class="connect-box">
+            <div id="timer">60</div>
+            <div>
+                <a href="https://hodlinfo.com/connect/telegram" target="_blank">
+                <button>
+                    <img src="./static/telegram.png" height="15px" class="telegram-logo">
+                    Connect Telegram
+                </button>
+            </a>
+            </div>
+        </div>
+
+    </nav>
+    <section>
+        <table class="table-content"></table>
+        <h1 id="loading-screen" class="hidden">Loading...</h1>
+    </section>
+</body>
+
+</html>
